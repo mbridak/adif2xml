@@ -1,0 +1,2 @@
+adif-io~=0.0.3
+dicttoxml~=1.7.4
