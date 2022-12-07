@@ -39,12 +39,12 @@ if not args.filename:
     sys.exit()
 
 qsos_raw, adif_header = adif_io.read_from_file(args.filename)
-Qs = {}
+QSOs = {}
 
 
-for q, contact in enumerate(qsos_raw):
-    Qs[f"QSO_{q}"] = contact
+for count, contact in enumerate(qsos_raw):
+    QSOs[f"QSO_{count}"] = contact
 
-XML_TO_OUTPUT = dicttoxml(Qs, attr_type=False, custom_root="CONTACTS")
+XML_TO_OUTPUT = dicttoxml(QSOs, attr_type=False, custom_root="CONTACTS")
 
 args.output.write(parseString(XML_TO_OUTPUT).toprettyxml())
