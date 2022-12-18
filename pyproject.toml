@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "adif2xml" 
-version = "1.0.0"
+version = "1.0.1"
 description = "Converts an ADIF file to XML."
 readme = "README.md"
 requires-python = ">=3.9"
