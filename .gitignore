@@ -1,0 +1,4 @@
+rebuild.sh
+__pycache__
+adif2xml.egg-info
+dist

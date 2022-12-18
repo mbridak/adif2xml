@@ -2,17 +2,14 @@
 
 A commandline tool to convert an ADIF file to an XML file.
 
-## Install library requirements with:
+## Install
 
 ```bash
-pip3 install -r requirements.txt
+pip install adif2xml
 ```
 
-## Usage:
+## Usage
 
 ```bash
-python3 adif2xml.py source.adi -o output.xml
+adif2xml source.adi -o output.xml
 ```
-
-The QSO.adi file and QSO.xml file included here are just for example/testing
-and proof of life.
